@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/dsad"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="182dp"
+        android:background="@drawable/board"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="3">
+
+
+
+        <!--First Column For Tic Tac Toe Board-->
+
+        <ImageView
+            android:id="@+id/counter1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:onClick="counterOnClick"
+            android:tag="0"/>
+        <ImageView
+            android:id="@+id/counter2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:onClick="counterOnClick"
+            android:tag="1"/>
+        <ImageView
+            android:id="@+id/counter3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:onClick="counterOnClick"
+            android:tag="2"/>
+
+        <ImageView
+            android:id="@+id/counter4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:onClick="counterOnClick"
+            android:tag="3"/>
+        <ImageView
+            android:id="@+id/counter5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:onClick="counterOnClick"
+            android:tag="4"/>
+        <ImageView
+            android:id="@+id/counter6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:onClick="counterOnClick"
+            android:tag="5"/>
+
+        <ImageView
+            android:id="@+id/counter7"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:onClick="counterOnClick"
+            android:tag="6"/>
+        <ImageView
+            android:id="@+id/counter8"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:onClick="counterOnClick"
+            android:tag="7"/>
+        <ImageView
+            android:id="@+id/counter9"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:onClick="counterOnClick"
+            android:tag="8"/>
+
+    </android.support.v7.widget.GridLayout>
+
+    <Button
+        android:id="@+id/btn_playAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="playAgain"
+        android:text="Play Again"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/dsad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
